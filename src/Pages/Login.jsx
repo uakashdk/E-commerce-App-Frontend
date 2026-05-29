@@ -23,6 +23,7 @@ const Login = () => {
             const res = await api.post("/auth/login", form);
 
             localStorage.setItem("token", res.data.token);
+            localStorage.setItem("isAdmin", res.data.isAdmin);
             navigate("/dashboard");
             toast.success("Login successful");
         } catch (err) {
