@@ -61,7 +61,7 @@ const Header = () => {
           <nav className="hidden md:flex items-center gap-8">
 
             <a
-              href="/dashboard"
+              href="/"
               className="text-gray-700 font-medium hover:text-blue-600 transition"
             >
               Home
@@ -209,7 +209,7 @@ const Header = () => {
             flex flex-col gap-4"
           >
 
-            <a href="/dashboard" className="hover:text-blue-600 transition">
+            <a href="/" className="hover:text-blue-600 transition">
               Home
             </a>
 

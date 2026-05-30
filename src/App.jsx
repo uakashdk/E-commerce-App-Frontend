@@ -10,6 +10,8 @@ import ProductList from "./Pages/ProductList.jsx";
 import CreateCategory from "./Pages/createCategory.jsx";
 
 import PrivateRoute from "./components/PrivateRoute.jsx";
+import Home from "./Pages/Home.jsx";
+import Profile from "./Pages/Profile.jsx";
 
 import Header from "./components/layout/Header.jsx";
 import Footer from "./components/layout/Footer.jsx";
@@ -37,6 +39,12 @@ const App = () => {
       <Route path="/register" element={<Register />} />
 
       {/* Protected Routes */}
+      <Route  
+      path="/"
+      element={
+      <DashboardLayout><Home/></DashboardLayout>
+      }
+      />
       <Route
         path="/dashboard"
         element={
@@ -46,6 +54,17 @@ const App = () => {
             </DashboardLayout>
           </PrivateRoute>
         }
+      />
+
+      <Route
+      path="/profile"
+      element={
+        <PrivateRoute>
+          <DashboardLayout>
+            <Profile />
+          </DashboardLayout>
+        </PrivateRoute>
+      }
       />
 
       <Route
