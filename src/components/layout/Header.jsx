@@ -74,12 +74,12 @@ const Header = () => {
               Products
             </a>
 
-            <a
+            {/* <a
               href="/categories"
               className="text-gray-700 font-medium hover:text-blue-600 transition"
             >
               Categories
-            </a>
+            </a> */}
 
             <a
               href="/about"
@@ -220,12 +220,12 @@ const Header = () => {
               Products
             </a>
 
-            <a
+            {/* <a
               href="/dashboard/categories"
               className="hover:text-blue-600 transition"
             >
               Categories
-            </a>
+            </a> */}
 
             <a
               href="/about"

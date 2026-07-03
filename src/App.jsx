@@ -7,6 +7,7 @@ import DashBoard from "./Pages/DashBoard.jsx";
 import CreateProduct from "./Pages/CreateProduct.jsx";
 import UpdateProduct from "./Pages/UpdateProduct.jsx";
 import ProductList from "./Pages/ProductList.jsx";
+import About from "./Pages/About.jsx";
 import CreateCategory from "./Pages/createCategory.jsx";
 
 import PrivateRoute from "./components/PrivateRoute.jsx";
@@ -38,12 +39,22 @@ const App = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
 
+      
+
       {/* Protected Routes */}
       <Route  
       path="/"
       element={
       <DashboardLayout><Home/></DashboardLayout>
       }
+      />
+      <Route
+        path="/about"
+        element={
+          <DashboardLayout>
+            <About />
+          </DashboardLayout>
+        }
       />
       <Route
         path="/dashboard"
